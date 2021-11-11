@@ -1,0 +1,13 @@
+---
+# tasks file for docker-registry
+- name: Log into DockerHub
+  docker_login:
+    username: farah13
+    password: e1062358-7f0c-4c0f-81f9-880f14b9297c
+
+- name: Tag and push to docker hub
+  docker_image:
+          name: farah13/cd-project:angularApp
+    repository: farah13/cd-project
+    tag: angularApp
+    push: yes
