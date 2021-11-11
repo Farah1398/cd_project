@@ -7,7 +7,7 @@
 
 - name: Tag and push to docker hub
   docker_image:
-          name: farah13/cd-project:angularApp
+          name: devops:latest
     repository: farah13/cd-project
-    tag: angularApp
+    tag: end
     push: yes
