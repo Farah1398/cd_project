@@ -6,7 +6,7 @@ pipeline {
                script{
                    checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                        userRemoteConfigs: [[
-                           credentialsId: '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',
+                           credentialsId: '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',
                            url: 'https://github.com/Farah1398/cd_project.git']]])
                }
            }
